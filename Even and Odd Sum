@@ -1,0 +1,24 @@
+import java.util.*;
+public class EvenandOddSum{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter an integer N: ");
+        int N = scan.nextInt();
+        
+        int evenSum = 0;
+        int oddSum = 0;
+
+        while (N > 0){
+            int digit = N % 10;            //(For taking the last digit for checking whether it's even or odd as remainder using modulus)          
+            if (digit % 2 == 0){          //(For determining whether the digit is odd or even)
+                evenSum += digit;
+            } 
+            else{
+                oddSum += digit;
+            }
+            N = N / 10;                   //For removing last digit
+        }
+        System.out.println("Sum of even digits: " + evenSum);
+        System.out.println("Sum of odd digits: " + oddSum);
+  }
+}
