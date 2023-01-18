@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class Age{
+    public static void main(String[] args){
+        Scanner s = new Scanner(System.in);
+
+        int a = s.nextInt();
+        int b = s.nextInt();
+        int c = s.nextInt();
+
+        if(a>b && a>c){
+            if(b>c){
+                System.out.println("A is Oldest and C is Youngest");
+            }
+            else{
+                System.out.println("A is Oldest and B is Youngest");
+            }
+        }
+        else if(b>c && b>a){
+            if(c>a){
+                System.out.println("B is Oldest and A is youngest");
+            }
+            else{
+                System.out.println("B is Oldest and C is youngest");
+            }
+        }
+        else{
+            if(a>b){
+                System.out.println("C is Oldest and B is Youngest");
+            }
+            else{
+                System.out.println("C is Oldest and A is Youngest");
+            }
+        }
+    }
+}
