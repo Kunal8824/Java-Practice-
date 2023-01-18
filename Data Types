@@ -1,0 +1,62 @@
+public class DataTypes {
+    public static void main(String[] args){
+        //2 Types of Data Types
+        //Primitive and Non-Primitive
+
+
+        //.....Primitive -> Specifies the size and type of variable values and it has no additional methods.
+        //In Primitive, 8 Data Types are present:
+        //     --> Long,Short,Byte,Int,Float,Double,Boolean,Char.
+        byte myNum = 100;
+        System.out.println(myNum);
+
+        short MYnumber = 5000;
+        System.out.println(MYnumber);
+
+        int MYum = 10000000;
+        System.out.println(MYum);
+
+        long number = 15000000000L;
+        System.out.println(number);
+
+        float number1 = 5.75f;
+        System.out.println(number1);
+
+        double NUMBER = 19.99d;
+        System.out.println(NUMBER);
+
+        //Difference between FLOAT and DOUBLE --
+        //FLOAT is of size 32 bits while DOUBLE is of size 64 bits.
+
+        //Scientific Numbers
+        float f1 = 353e2f;       // "'e' indicates the power of 10."
+        double d1 = 12E5d;     
+        System.out.println(f1);
+        System.out.println(d1);
+
+        //Boolean -> Declared only with the boolean keyword and can only take the value true or false.
+        boolean isn = true;
+        System.out.println(isn);
+
+        //Character -> Store a single character in single quotes like 'A'.
+        char myGrade = 'A';
+        System.out.println(myGrade);
+
+        // We can use ASCII values in characters also
+        char myVar1 = 73;
+        System.out.println(myVar1);
+
+        //Strings -> Store a sequence of character with double quotes.
+        String greeting = "Hello";
+        System.out.println(greeting);
+
+
+        //Non-Primitive -> .....These data types are also called Reference Types coz they refer to objects.
+        
+        //Difference between PRIMITIVE and NON-Primitive is :
+        //  --> Primitive are predefined in java but Non-Primitive is created by programmer and is defined.
+        //  --> Primitive always has a value while Non-Primitive can be null.
+        //  --> Primitive starts with a lowercase while Non-Primitive starts with a uppercase.
+        //  --> Size of Primitive depends on the data types while Non-Primitive have all the same size.
+    }
+}
