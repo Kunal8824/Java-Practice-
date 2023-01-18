@@ -1,0 +1,14 @@
+import java.util.*;
+public class Currency{
+    public static void main(String[] args){
+        Scanner s = new Scanner(System.in);
+
+        Float r = s.nextFloat();
+        System.out.println("Rupees :" + r);
+
+        Float d = r/64;
+
+        System.out.println("Dollars: " + d);
+    }
+    
+}
