@@ -1,0 +1,24 @@
+import java.util.*;
+public class Salary {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int basic = s.nextInt();
+        double h = (0.2) * basic;;
+        double d = (0.5) * basic;;
+        double pf = (11.0/100) * basic;
+        char al = s.next().charAt(0); 
+
+        double allowance;
+        if (al == 'A'){
+            allowance = 1700;
+        }
+        else if(al == 'B'){
+            allowance = 1500;
+        }
+        else{
+            allowance = 1300;
+        }
+        double totalSalary = basic + h + d + allowance - pf;
+        System.out.println(totalSalary);
+    }
+}
