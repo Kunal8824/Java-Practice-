@@ -1,0 +1,19 @@
+import java.util.*;
+public class FahrenheittoCelsius{
+    public static void main(String[] args){
+
+        Scanner scan = new Scanner(System.in);
+        int s = scan.nextInt();
+        int e = scan.nextInt();
+        int w = scan.nextInt(); 
+
+        int f = s;
+
+        while(f <= e){
+            int c = (5*(f - 32))/9;
+
+            System.out.println(f + " " + c);
+            f = f + w;
+        }
+    }
+}
