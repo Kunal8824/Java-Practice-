@@ -1,0 +1,17 @@
+CODE ------->>
+
+import java.util.*;
+public class SimpleInterest{
+    public static void main(String[] args){
+        Scanner s = new Scanner(System.in);
+
+        Float P = s.nextFloat();
+        Float T = s.nextFloat();
+        Float R = s.nextFloat();
+
+        Float SI = (P*R*T)/100;
+
+        System.out.println(SI);
+    }
+    
+}
