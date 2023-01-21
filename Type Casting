@@ -1,0 +1,34 @@
+public class TypeCasting{
+    public static void main(String[] args){
+        //Type Casting -> When you assign a value of one Primitive data type to another data type.
+        //   ---> In java, there are 2 types of Casting:
+        //           -->Widening(auto) and Narrow(manual)
+        
+        // --> Widening Casting: Smaller to Larger.
+        //          Byte -> Short -> Char -> Int -> Long -> Float -> Double
+        
+        // ---> Narrow Casting: Larger to Smaller.
+        //          Double -> Float -> Long -> Int -> Char -> Short -> Byte 
+
+
+        //Widening Casting 
+        int myInt = 9;
+        double myDouble = myInt;
+        System.out.println(myInt);   //Output 9
+        System.out.println(myDouble);   //Output 9.0
+
+
+        //Narrow Casting
+        double MyDouble = 9.78d;
+        int MYint = (int)MyDouble;   //Double to int
+        System.out.println(MyDouble);    //Output 9.78
+        System.out.println(MYint);       //Output 9
+
+
+
+        short s = 17;
+        int i = s;
+        i = (short)s;
+        System.out.println(i);
+    }
+}
