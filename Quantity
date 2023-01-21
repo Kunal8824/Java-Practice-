@@ -1,0 +1,21 @@
+CODE --------->>
+
+import java.util.Scanner;
+public class Quantity{ 
+    public static void main(String[] args){
+
+        Scanner s = new Scanner(System.in);
+
+        int unit = s.nextInt();
+        int original = unit * 100;
+        int cost = unit * 100;
+
+        if(cost <= 1000){
+            System.out.println(cost);
+        }
+        else{
+            cost = cost / 10;
+            System.out.println(original - cost);
+        }
+    }
+}
