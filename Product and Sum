@@ -1,0 +1,31 @@
+CODE---------->>
+
+import java.util.*;
+public class ProductandSum{
+    public static void main(String[] args){
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        int c = s.nextInt();
+        if(c == 1){
+            int sum = 0;
+            int num = 1;
+            while(num <= n){
+                sum = sum + num;
+                num = num + 1;
+                System.out.println(sum);
+            }
+        }
+        else if (c == 2){
+            int product = 1;
+            int num = 1;
+            while(num <= n){
+                product = product * num;
+                num = num + 1;
+                System.out.println(product);
+            }
+        }
+        else{
+            System.out.println("-1");
+        }
+    }
+}
