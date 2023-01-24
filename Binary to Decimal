@@ -1,0 +1,18 @@
+CODE ------------>>
+
+import java.util.*;
+public class BinarytoDecimal{
+    public static void main(String[] args){
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        int decimal = 0;
+        int pv = 1;
+        while(n > 0){
+            int last = n % 10;
+            decimal = decimal + last * pv;
+            pv = pv * 2;
+            n = n / 10;
+        }
+        System.out.println(decimal);
+    }
+}
