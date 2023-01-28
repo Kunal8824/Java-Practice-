@@ -1,0 +1,29 @@
+import java.util.*;
+public class DivideNumbersusingFunccions{
+    public static int divideNumbers(int num,int deno){
+        if(deno == 0){
+            return Integer.MIN_VALUE;
+        }
+        // System.out.println("Inside Division Functions");
+        return num / deno;
+    }
+
+    // USING VOID METHOD ----->>
+
+    public static void printdivideNumbers(int num, int deno){
+        if(deno == 0){
+            System.out.println("Division by Zero is not allowed.");
+            //Exit the Function. In Void Methods of making a function, We are not allowed to return any value but We just have to return it empty.
+            return;
+        }
+        System.out.println(num / deno);
+    }
+
+    public static void main(String[] args){
+        int num = 8;
+        int deno = 0;
+        printdivideNumbers(num , deno);
+        // int result = divideNumbers(num, deno);
+        // System.out.println(result);
+    }
+}
