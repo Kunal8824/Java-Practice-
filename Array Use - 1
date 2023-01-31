@@ -1,0 +1,18 @@
+import java.util.*;
+public class arrayUse1{
+    public static void main(String[] args){
+        Scanner s = new Scanner(System.in);
+
+//      int[] marks = new int[5];
+        int[] marks;
+        marks = new int [5]; 
+        marks[0] = 94;
+        marks[1] = 76;
+        marks[2] = 84;
+        marks[3] = 90;
+        marks[4] = 100;
+        // marks[5] = 92;  --- Throws an error because array length is 5 and we are storing 6th element.
+        System.out.println(marks[3]);
+
+    }
+}
