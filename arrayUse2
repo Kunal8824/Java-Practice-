@@ -1,0 +1,28 @@
+import java.util.*;
+public class arrayUse2{
+    public static void main(String[] args){
+
+        Scanner s = new Scanner(System.in);
+
+        int[] marks = {100,90,83,82,91};
+        System.out.println(marks.length); 
+
+        // Displaying the Array (For Loop)
+        System.out.println("Printing using For Loop");
+        for(int i = 0;i < marks.length;i++){
+            System.out.println(marks[i]);
+        }
+
+        // Displaying the Array in Reverse Order (For Loop)
+        System.out.println("Printing using For Loop in Reverse Order");
+        for(int i = marks.length - 1;i >= 0;i--){
+            System.out.println(marks[i]);
+        }
+
+        // Displaying the Array (FOR - Each Loop)
+        System.out.println("Printing using For-Each Loop in Reverse Order");
+        for(int element : marks){
+            System.out.println(element);
+        }
+    }   
+}
