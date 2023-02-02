@@ -1,0 +1,17 @@
+// Create an array of 5 floats and Calculate their sum.
+
+
+import java.util.*;
+public class Array1{
+    public static void main(String[] args){
+        Scanner s = new Scanner(System.in);
+        float[] freaks = {1.2f , 1.3f , 1.1f , 1.5f , 1.4f};
+
+        float sum = 0;
+
+        for(float element : freaks){
+            sum = sum + element;
+        }
+        System.out.print("The value of Sum is : " + sum);
+    }
+}
